@@ -1,0 +1,26 @@
+{
+  "name": "dagens-namn",
+  "version": "1.0.0",
+  "description": "The name of the day in the Swedish calendar.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec test/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hdjarv/dagens-namn.git"
+  },
+  "keywords": [
+    "calendar",
+    "name",
+    "swedish",
+    "sweden"
+  ],
+  "author": "Henrik Djärv <henrik@djarv.org> (https://github.com/hdjarv)",
+  "license": "MIT",
+  "bugs": "https://github.com/hdjarv/dagens-namn/issues",
+  "devDependencies": {
+    "chai": "^2.2.0",
+    "mocha": "^2.2.4"
+  }
+}
