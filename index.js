@@ -8,5 +8,9 @@ module.exports = function (date) {
   var monthNo = date.getMonth() + 1,
       dayNo = date.getDate();
 
+  if(isNaN(monthNo) || isNaN(dayNo)) {
+    throw new Error('Invalid date');
+  }
+
   return data[monthNo][dayNo];
 };

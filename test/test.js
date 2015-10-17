@@ -31,3 +31,12 @@ Object.keys(data).forEach(function(month) {
     });
   });
 });
+
+// test some invalid dates, it should throw errors for these
+['2012-01-00', '2015-13-01'].forEach(function(invalidDate) {
+  it('should throw an error for invalid date ' + invalidDate, function() {
+    assert.throws(function() {
+      dagensnamn(new Date(invalidDate));
+    }, Error, 'Invalid date');
+  });
+});
