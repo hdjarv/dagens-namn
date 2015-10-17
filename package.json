@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "The name of the day in the Swedish calendar.",
   "main": "index.js",
+  "bin": "index.js",
   "scripts": {
     "test": "mocha --reporter spec test/"
   },
